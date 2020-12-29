@@ -1,17 +1,55 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title translate>
+            tabs.reservation
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <form #form="ngForm" (ngSubmit)="reserve(form)">
+        <div padding>
+            <ion-list>
+                <ion-item>
+                    <ion-input name="name" type="text" placeholder="{{'tab1.Name'|translate}}" ngModel
+                               required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label translate>tab1.Gender</ion-label>
+                    <ion-select name="gender" okText="{{'Common.OK'|translate}}"
+                                cancelText="{{'Common.Cancel'|translate}}">
+                        <ion-select-option value="male" translate>Gender.Male</ion-select-option>
+                        <ion-select-option value="female" translate>Gender.Female</ion-select-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-input name="tel" type="text" placeholder="{{'tab1.TelephoneNumber'|translate}}" ngModel
+                               required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label translate>tab1.Birthday</ion-label>
+                    <ion-datetime placeholder="{{'tab1.Birthday'|translate}}"></ion-datetime>
+                    <!--                    <ion-input name="birthday" type="text" placeholder="{{'tab1.Birthday'|translate}}" ngModel-->
+                    <!--                               required></ion-input>-->
+                </ion-item>
+                <ion-item>
+                    <ion-input name="email" type="text" placeholder="{{'tab1.Email'|translate}}" ngModel
+                               required></ion-input>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div padding>
+<!--            <ion-button size="large" type="submit" [disabled]="form.invalid"-->
+            <ion-button size="large" type="submit" (click)="submit()"
+                        expand="block">{{'tab1.Submit'|translate}}</ion-button>
+        </div>
+    </form>
+
 </ion-content>

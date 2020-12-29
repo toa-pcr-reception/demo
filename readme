@@ -1,0 +1,9 @@
+aws ecr get-login-password --region ap-northeast-1 | docker login --username AWS --password-stdin 391006585457.dkr.ecr.ap-northeast-1.amazonaws.com
+
+docker build -t pcr/demo .
+docker run --name demo-container -d -p 8080:80 demo-image
+
+docker tag pcr/demo:latest 391006585457.dkr.ecr.ap-northeast-1.amazonaws.com/pcr/demo:latest
+docker push 391006585457.dkr.ecr.ap-northeast-1.amazonaws.com/pcr/demo:latest
+
+ssh -i "chen09@tlzs.pem" ubuntu@3.113.19.247

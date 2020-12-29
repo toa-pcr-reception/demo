@@ -1,0 +1,23 @@
+{
+  "tabs": {
+    "reservation": "予約",
+    "settings": "設定"
+  },
+  "tab1": {
+    "Name": "氏名",
+    "Gender": "性別",
+    "TelephoneNumber": "お電話番号",
+    "Birthday": "生年月日",
+    "Email": "メールアドレス",
+    "LINEID": "LINE ID",
+    "Submit": "提出"
+  },
+  "Gender": {
+    "Male": "男",
+    "Female": "女"
+  },
+  "Common": {
+    "OK": "確定",
+    "Cancel": "キャンセル"
+  }
+}

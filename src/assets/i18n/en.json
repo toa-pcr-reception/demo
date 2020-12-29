@@ -1,0 +1,23 @@
+{
+  "tabs": {
+    "reservation": "reservation",
+    "settings": "settings"
+  },
+  "tab1": {
+    "Name": "Name",
+    "Gender": "Gender",
+    "TelephoneNumber": "Telephone Number",
+    "Birthday": "Birthday",
+    "Email": "email",
+    "LINEID": "LINE ID",
+    "Submit": "Submit"
+  },
+  "Gender": {
+    "Male": "male",
+    "Female": "female"
+  },
+  "Common": {
+    "OK": "OK",
+    "Cancel": "Cancel"
+  }
+}

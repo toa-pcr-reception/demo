@@ -1,0 +1,23 @@
+{
+  "tabs": {
+    "reservation": "预约",
+    "settings": "设定"
+  },
+  "tab1": {
+    "Name": "姓名",
+    "Gender": "性别",
+    "Telephone Number": "电话号码",
+    "Birthday": "出生日期",
+    "Email": "电子邮箱",
+    "LINEID": "LINE ID",
+    "Submit": "提交"
+  },
+  "Gender": {
+    "Male": "男",
+    "Female": "女"
+  },
+  "Common": {
+    "OK": "确定",
+    "Cancel": "取消"
+  }
+}
