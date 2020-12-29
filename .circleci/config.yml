@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 #cache_key: &cache_key cg-front-end-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
 
