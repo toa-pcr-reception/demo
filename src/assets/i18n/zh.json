@@ -9,12 +9,28 @@
     "Telephone Number": "电话号码",
     "Birthday": "出生日期",
     "Email": "电子邮箱",
-    "LINEID": "LINE ID",
-    "Submit": "提交"
+    "LineId": "LINE ID",
+    "Submit": "提交",
+    "Notification": "通知",
+    "CheckCenter": "检查店铺"
+  },
+  "tab2": {
+    "Submit": "修改"
   },
   "Gender": {
     "Male": "男",
     "Female": "女"
+  },
+  "notification": {
+    "Email": "邮件",
+    "TelephoneNumber": "手机",
+    "LineId": "LINE"
+  },
+  "checkCenter": {
+    "Osaka": "大阪",
+    "Tokyo1": "东京 1",
+    "Tokyo2": "东京 2",
+    "Hokkaido": "北海道"
   },
   "Common": {
     "OK": "确定",

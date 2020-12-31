@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {environment} from '../../environments/environment';
+import { environment } from '../../environments/environment';
 
 @Component({
     selector: 'app-tab2',
@@ -8,19 +8,13 @@ import {environment} from '../../environments/environment';
     styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-    constructor(private translate: TranslateService) {
-        this.initTranslate();
+    selectedLan = null;
+
+    constructor(private translateService: TranslateService) {
+        this.selectedLan = environment.defaultLanguage
     }
 
-    initTranslate() {
-        // Set the default language for translation strings, and the current language.
-        // Set the default language for translation strings, and the current language.
-        this.translate.setDefaultLang(environment.defaultLanguage);
-        if (this.translate.getBrowserLang() !== undefined) {
-            this.translate.use(this.translate.getBrowserLang());
-        } else {
-            this.translate.use(environment.defaultLanguage); // Set your language here
-        }
+    changeLan() {
+        this.translateService.use(this.selectedLan)
     }
-
 }

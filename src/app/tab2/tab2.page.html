@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Language Change
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,28 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Language Change</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <form #form="ngForm" (ngSubmit)="changeLan()">
+    <div padding>
+      <ion-list>
+        <ion-item>
+          <ion-label translate>Language</ion-label>
+          <ion-select name="language" [(ngModel)]="selectedLan" okText="{{'Common.OK'|translate}}" cancelText="{{'Common.Cancel'|translate}}">
+            <ion-select-option value="ja" translate>Japanese</ion-select-option>
+            <ion-select-option value="en" translate>English</ion-select-option>
+            <ion-select-option value="zh" translate>Chinese</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div padding>
+      <!--            <ion-button size="large" type="submit" [disabled]="form.invalid"-->
+                  <ion-button size="large" type="submit"
+                              expand="block">{{'tab2.Submit'|translate}}</ion-button>
+              </div>
+  </form>
 </ion-content>

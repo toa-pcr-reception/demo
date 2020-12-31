@@ -42,6 +42,29 @@
                     <ion-input name="email" type="text" placeholder="{{'tab1.Email'|translate}}" ngModel
                                required></ion-input>
                 </ion-item>
+                <ion-item>
+                    <ion-input name="lineId" type="text" placeholder="{{'tab1.LineId'|translate}}" ngModel
+                               required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label translate>tab1.Notification</ion-label>
+                    <ion-select name="notification" okText="{{'Common.OK'|translate}}"
+                                cancelText="{{'Common.Cancel'|translate}}">
+                        <ion-select-option value="Email" translate>notification.Email</ion-select-option>
+                        <ion-select-option value="TelephoneNumber" translate>notification.TelephoneNumber</ion-select-option>
+                        <ion-select-option value="LineId" translate>notification.LineId</ion-select-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label translate>tab1.CheckCenter</ion-label>
+                    <ion-select name="checkCenter" okText="{{'Common.OK'|translate}}"
+                                cancelText="{{'Common.Cancel'|translate}}">
+                        <ion-select-option value="Osaka" translate>checkCenter.Osaka</ion-select-option>
+                        <ion-select-option value="Tokyo1" translate>checkCenter.Tokyo1</ion-select-option>
+                        <ion-select-option value="Tokyo2" translate>checkCenter.Tokyo2</ion-select-option>
+                        <ion-select-option value="Hokkaido" translate>checkCenter.Hokkaido</ion-select-option>
+                    </ion-select>
+                </ion-item>
             </ion-list>
         </div>
 

@@ -9,12 +9,28 @@
     "TelephoneNumber": "お電話番号",
     "Birthday": "生年月日",
     "Email": "メールアドレス",
-    "LINEID": "LINE ID",
-    "Submit": "提出"
+    "LineId": "LINE ID",
+    "Submit": "提出",
+    "Notification": "結果通知",
+    "CheckCenter": "検査实施店舗"
+  },
+  "tab2": {
+    "Submit": "更新"
   },
   "Gender": {
     "Male": "男",
     "Female": "女"
+  },
+  "notification": {
+    "Email": "メール",
+    "TelephoneNumber": "お電話",
+    "LineId": "LINE"
+  },
+  "checkCenter": {
+    "Osaka": "大坂",
+    "Tokyo1": "東京1",
+    "Tokyo2": "東京2",
+    "Hokkaido": "北海道"
   },
   "Common": {
     "OK": "確定",

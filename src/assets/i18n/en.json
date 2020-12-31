@@ -9,12 +9,28 @@
     "TelephoneNumber": "Telephone Number",
     "Birthday": "Birthday",
     "Email": "email",
-    "LINEID": "LINE ID",
-    "Submit": "Submit"
+    "LineId": "LINE ID",
+    "Submit": "Submit",
+    "Notification": "Notification",
+    "CheckCenter": "Check shop"
+  },
+  "tab2": {
+    "Submit": "Change"
   },
   "Gender": {
     "Male": "male",
     "Female": "female"
+  },
+  "notification": {
+    "Email": "Email",
+    "TelephoneNumber": "Mobile",
+    "LineId": "LINE"
+  },
+  "checkCenter": {
+    "Osaka": "Osaka",
+    "Tokyo1": "Tokyo 1",
+    "Tokyo2": "Tokyo 2",
+    "Hokkaido": "Hokkaido"
   },
   "Common": {
     "OK": "OK",

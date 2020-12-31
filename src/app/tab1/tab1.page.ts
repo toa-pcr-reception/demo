@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
 import {environment} from '../../environments/environment';
 import {NgForm} from '@angular/forms';
 import {LoadingController} from '@ionic/angular';
@@ -11,27 +10,13 @@ import {LoadingController} from '@ionic/angular';
 })
 export class Tab1Page {
 
-    constructor(private translate: TranslateService,
-                private loadingController: LoadingController) {
-        this.initTranslate();
-    }
-
-    initTranslate() {
-        // Set the default language for translation strings, and the current language.
-        this.translate.setDefaultLang(environment.defaultLanguage);
-        this.translate.use(environment.defaultLanguage);
-        // if (this.translate.getBrowserLang() !== undefined) {
-        //     this.translate.use(this.translate.getBrowserLang());
-        // } else {
-        //     this.translate.use(environment.defaultLanguage); // Set your language here
-        // }
+    constructor(private loadingController: LoadingController) {
     }
 
     reserve(form: NgForm) {
         console.log(form);
 
     }
-
 
     async submit() {
         const loading = await this.loadingController.create({
