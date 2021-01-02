@@ -1,7 +1,8 @@
 {
   "tabs": {
     "reservation": "预约",
-    "settings": "设定"
+    "settings": "设定",
+    "manager": "管理员"
   },
   "tab1": {
     "Name": "姓名",

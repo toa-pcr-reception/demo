@@ -1,7 +1,8 @@
 {
   "tabs": {
     "reservation": "reservation",
-    "settings": "settings"
+    "settings": "settings",
+    "manager": "manager"
   },
   "tab1": {
     "Name": "Name",

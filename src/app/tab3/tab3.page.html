@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Administrator
+      <ion-button>Waiting</ion-button>
+      <ion-button>See All</ion-button>
+    </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Administrator</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- List of Input Items -->
+  <ion-list>
+    <ion-item *ngFor="let hero of heroes">
+      <ion-label><span class="badge">{{hero.id}}</span> {{hero.name}}</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
